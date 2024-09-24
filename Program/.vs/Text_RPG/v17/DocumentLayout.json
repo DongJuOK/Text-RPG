@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SBS\\Desktop\\Text_RPG\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text_RPG\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text_RPG\\Source.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text_RPG\\Source.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAADAAAA",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswJIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-23T11:41:37.041Z",
               "EditorCaption": ""
