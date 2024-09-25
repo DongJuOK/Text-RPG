@@ -1,6 +1,1 @@
-﻿  Source.c
-C:\Users\user\Desktop\Text-RPG\Program\Source.c(101,11): warning C4013: 'keyControl'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\user\Desktop\Text-RPG\Program\Source.c(138,2): warning C4013: 'init'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\user\Desktop\Text-RPG\Program\Source.c(147,14): warning C4013: '_getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-Source.obj : error LNK2001: 확인할 수 없는 외부 기호 init
-C:\Users\user\Desktop\Text-RPG\Program\x64\Release\Text_RPG.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿LINK : fatal error LNK1104: 'C:\Users\user\Desktop\Text-RPG\Program\x64\Release\Text_RPG.exe' 파일을 열 수 없습니다.

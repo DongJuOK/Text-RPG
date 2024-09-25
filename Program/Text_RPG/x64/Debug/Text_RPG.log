@@ -1,2 +1,8 @@
 ﻿  Source.c
+C:\Users\user\Desktop\Text-RPG\Program\Source.c(34,2): warning C4013: 'setSystem'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\user\Desktop\Text-RPG\Program\Source.c(38,3): warning C4013: 'title'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\user\Desktop\Text-RPG\Program\Source.c(39,18): warning C4013: 'menu'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\user\Desktop\Text-RPG\Program\Source.c(47,4): warning C4013: 'info'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  util.c
+  코드를 생성하고 있습니다...
   Text_RPG.vcxproj -> C:\Users\user\Desktop\Text-RPG\Program\x64\Debug\Text_RPG.exe
