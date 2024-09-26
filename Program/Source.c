@@ -40,7 +40,7 @@ int main()
 
 		if (menucode == 0)
 		{
-			
+			start();
 		}
 		else if (menucode == 2)
 		{

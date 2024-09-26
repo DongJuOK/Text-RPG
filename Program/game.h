@@ -11,6 +11,8 @@
 #define RIGHT 'd'
 #define SUBMIT ' '
 
+#define SIZE 5
+
 void title();
 int menu();
 void info();
