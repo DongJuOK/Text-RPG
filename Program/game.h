@@ -2,7 +2,8 @@
 
 #pragma once
 
-#define HEIGHT 9
+#define HEIGHT1 9
+#define HEIGHT2 15
 #define WIDTH 38
 
 #define UP 'w'
