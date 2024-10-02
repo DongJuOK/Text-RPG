@@ -17,3 +17,4 @@
 void title();
 int menu();
 void info();
+void start();
