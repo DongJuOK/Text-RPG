@@ -10,9 +10,33 @@ struct Weapon
 	int defense;
 };
 
+struct Zombie
+{
+	int health;
+	int attack;
+	int defense;
+};
+
 struct Weapon shovel = { 100, 15, 10 };
 struct Weapon lighter = { 75, 17, 7 };
 struct Weapon gun = { 50, 20, 5 };
+
+struct Zombie zombie1 = { 100, 8, 5 };
+struct Zombie zombie2 = { 80, 10, 3 };
+struct Zombie zombie3 = { 65, 13, 7 };
+
+void Load(const char* fileName)
+{
+	FILE* file = fopen(fileName, "r");
+
+	char buffer[SIZE2] = { 0, };
+
+	fread(buffer, 1, SIZE2, file);
+
+	printf("%s", buffer);
+
+	fclose(file);
+}
 
 void title()
 {
@@ -250,6 +274,8 @@ void c_box()
 		{ '2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2','2' }
 	};
 
+	gotoxy(0, 2);
+
 	for (int i = 0; i < HEIGHT2; i++)
 	{
 		for (int j = 0; j < WIDTH; j++)
@@ -272,12 +298,134 @@ void c_box()
 	}
 }
 
+void public_data()
+{
+	gotoxy(15, 20);
+	printf("모험 시작");
+	gotoxy(52, 20);
+	printf("게임 종료");
+}
+
+void adventure_1()
+{
+	system("cls");
+
+	Load("zombie_1.txt");
+
+
+}
+
+int game_select()
+{
+	int x = 13;
+	int y = 20;
+
+	gotoxy(x, y);
+	printf(">");
+
+	while (1)
+	{
+		if (_kbhit())
+		{
+			key = _getch();
+
+			if (key == -32)
+			{
+				key = _getch();
+			}
+
+			switch (key)
+			{
+			case RIGHT: if (x < 50)
+			{
+				gotoxy(x, y);
+				printf("  ");
+				x += 37;
+				gotoxy(x, y);
+				printf(">");
+			}
+					  break;
+			
+			case LEFT: if (x > 13)
+			{
+				gotoxy(x, y);
+				printf("  ");
+				x -= 37;
+				gotoxy(x, y);
+				printf(">");
+			}
+					 break;
+
+			case SUBMIT: 
+			{
+				if (x == 13)
+				{
+					adventure_1();
+				}
+				else if (x == 50)
+				{
+					system("cls");
+					exit(0);
+				}
+			}
+
+			return 0;
+			}
+		}
+	}
+
+	return 0;
+}
+
 void data_shovel()
 {
-	gotoxy(10, 5);
+	gotoxy(12, 7);
 	printf("닉네임 : %s", name);
-	gotoxy(12, 9);
+	gotoxy(14, 11);
 	printf("무기 : 삽");
+	gotoxy(51, 6);
+	printf("체  력 : %d", shovel.health);
+	gotoxy(51, 9);
+	printf("공격력 : %d", shovel.damage);
+	gotoxy(51, 12);
+	printf("방어력 : %d", shovel.defense);
+
+	public_data();
+	game_select();
+}
+
+void data_lighter()
+{
+	gotoxy(12, 7);
+	printf("닉네임 : %s", name);
+	gotoxy(7, 11);
+	printf("무기 : 라이터와 에프킬라");
+	gotoxy(51, 6);
+	printf("체  력 : %d", lighter.health);
+	gotoxy(51, 9);
+	printf("공격력 : %d", lighter.damage);
+	gotoxy(51, 12);
+	printf("방어력 : %d", lighter.defense);
+
+	public_data();
+	game_select();
+}
+
+void data_gun()
+{
+	gotoxy(12, 7);
+	printf("닉네임 : %s", name);
+	gotoxy(14, 11);
+	printf("무기 : 총");
+	gotoxy(51, 6);
+	printf("체  력 : %d", gun.health);
+	gotoxy(51, 9);
+	printf("공격력 : %d", gun.damage);
+	gotoxy(51, 12);
+	printf("방어력 : %d", gun.defense);
+
+	public_data();
+	game_select();
 }
 
 int weapon_select()
@@ -330,11 +478,13 @@ int weapon_select()
 				}
 				else if (x == 37)
 				{
-					system("cls");
+					c_box();
+					data_lighter();
 				}
-				if (x == 62)
+				else if (x == 62)
 				{
-					system("cls");
+					c_box();
+					data_gun();
 				}
 			}
 
@@ -356,10 +506,10 @@ void weapon_name()
 	gotoxy(7, 9);
 	printf("(근거리 무기)");
 	gotoxy(7, 12);
-	printf("체력  : %d", shovel.health);
-	gotoxy(6, 14);
+	printf("체  력 : %d", shovel.health);
+	gotoxy(7, 14);
 	printf("공격력 : %d", shovel.damage);
-	gotoxy(6, 16);
+	gotoxy(7, 16);
 	printf("방어력 : %d", shovel.defense);
 
 	gotoxy(30, 7);
@@ -367,10 +517,10 @@ void weapon_name()
 	gotoxy(32, 9);
 	printf("(중거리 무기)");
 	gotoxy(33, 12);
-	printf("체력  : %d", lighter.health);
-	gotoxy(32, 14);
+	printf("체  력 : %d", lighter.health);
+	gotoxy(33, 14);
 	printf("공격력 : %d", lighter.damage);
-	gotoxy(32, 16);
+	gotoxy(33, 16);
 	printf("방어력 : %d", lighter.defense);
 
 	gotoxy(62, 7);
@@ -378,10 +528,10 @@ void weapon_name()
 	gotoxy(57, 9);
 	printf("(원거리 무기)");
 	gotoxy(58, 12);
-	printf("체력  : %d", gun.health);
-	gotoxy(57, 14);
+	printf("체  력 : %d", gun.health);
+	gotoxy(58, 14);
 	printf("공격력 : %d", gun.damage);
-	gotoxy(57, 16);
+	gotoxy(58, 16);
 	printf("방어력 : %d", gun.defense);
 
 	gotoxy(30, 22);

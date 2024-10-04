@@ -13,6 +13,7 @@
 #define SUBMIT ' '
 
 #define SIZE 5
+#define SIZE2 500000
 
 void title();
 int menu();
