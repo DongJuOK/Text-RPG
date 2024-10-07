@@ -2,6 +2,9 @@
 
 char key = 0;
 char name[100];
+char monster[100] = "몬 스 터";
+
+int s;
 
 struct Weapon
 {
@@ -306,13 +309,155 @@ void public_data()
 	printf("게임 종료");
 }
 
+void fight_box(int startx, int starty)
+{
+	const char title[HEIGHT3][WIDTH2] =
+	{
+		{ '2','2','2','2','2','2','2','2','2','2' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '1','0','0','0','0','0','0','0','0','1' },
+		{ '2','2','2','2','2','2','2','2','2','2' }
+	};
+
+	for (int i = 0; i < HEIGHT3; i++)
+	{
+		gotoxy(startx, starty + i);
+		for (int j = 0; j < WIDTH2; j++)
+		{
+			if (title[i][j] == '1')
+			{
+				printf("｜");
+			}
+			else if (title[i][j] == '0')
+			{
+				printf("  ");
+			}
+			else
+			{
+				printf("--");
+			}
+		}
+
+		printf("\n");
+	}
+}
+
+int Fight_Select()
+{
+	int x = 28;
+	int y = 10;
+
+	gotoxy(x, y);
+	printf(">            <");
+
+	while (1)
+	{
+		if (_kbhit())
+		{
+			key = _getch();
+
+			if (key == -32)
+			{
+				key = _getch();
+			}
+
+
+		}
+	}
+
+	return 0;
+}
+
+void Fight_Text(int z)
+{
+	gotoxy(8, 3);
+	printf("%s", monster);
+
+	gotoxy(9, 15);
+	printf("%s", name);
+
+	gotoxy(30, 10);
+	printf("공격한다");
+	gotoxy(30, 15);
+	printf("도망친다");
+
+	if (z == 0)
+	{
+		gotoxy(6, 6);
+		printf("체  력: %d\n", zombie1.health);
+		gotoxy(6, 8);
+		printf("공격력: %d\n", zombie1.attack);
+		gotoxy(6, 10);
+		printf("방어력: %d\n", zombie1.defense);
+	}
+	else if (z == 1)
+	{
+		gotoxy(6, 6);
+		printf("체  력: %d\n", zombie2.health);
+		gotoxy(6, 8);
+		printf("공격력: %d\n", zombie2.attack);
+		gotoxy(6, 10);
+		printf("방어력: %d\n", zombie2.defense);
+	}
+	else
+	{
+		gotoxy(6, 6);
+		printf("체  력: %d\n", zombie3.health);
+		gotoxy(6, 8);
+		printf("공격력: %d\n", zombie3.attack);
+		gotoxy(6, 10);
+		printf("방어력: %d\n", zombie3.defense);
+	}
+
+	if (s == 0)
+	{
+		gotoxy(6, 18);
+		printf("체  력: %d\n", shovel.health);
+		gotoxy(6, 20);
+		printf("공격력: %d\n", shovel.damage);
+		gotoxy(6, 22);
+		printf("방어력: %d\n", shovel.defense);
+	}
+	else if (s == 1)
+	{
+		gotoxy(6, 18);
+		printf("체  력: %d\n", lighter.health);
+		gotoxy(6, 20);
+		printf("공격력: %d\n", lighter.damage);
+		gotoxy(6, 22);
+		printf("방어력: %d\n", lighter.defense);
+	}
+	else if (s == 2)
+	{
+		gotoxy(6, 18);
+		printf("체  력: %d\n", gun.health);
+		gotoxy(6, 20);
+		printf("공격력: %d\n", gun.damage);
+		gotoxy(6, 22);
+		printf("방어력: %d\n", gun.defense);
+	}
+	
+}
+
 void adventure_1()
 {
 	system("cls");
 
 	Load("zombie_1.txt");
 
+	fight_box(2,1);
+	fight_box(2,13);
+	fight_box(24,7);
 
+	Fight_Text(0);
 }
 
 int game_select()
@@ -473,16 +618,19 @@ int weapon_select()
 			{
 				if (x == 12)
 				{
+					s = 0;
 					c_box();
 					data_shovel();
 				}
 				else if (x == 37)
 				{
+					s = 1;
 					c_box();
 					data_lighter();
 				}
 				else if (x == 62)
 				{
+					s = 2;
 					c_box();
 					data_gun();
 				}
