@@ -46,8 +46,7 @@
               "RelativeToolTip": "util.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-25T12:30:31.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T12:30:31.963Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "main.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-25T12:30:11.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T12:30:11.946Z"
             },
             {
               "$type": "Document",
@@ -70,10 +68,9 @@
               "RelativeDocumentMoniker": "game.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.h",
               "RelativeToolTip": "game.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-25T12:29:48.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T12:29:48.79Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "util.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-25T12:29:32.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T12:29:32.714Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "game.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.c",
               "RelativeToolTip": "game.c",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAAAHMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGABAAAAAAAAAAAAAMYBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-25T12:29:17.998Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "main.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-23T11:41:37.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T11:41:37.041Z"
             }
           ]
         }

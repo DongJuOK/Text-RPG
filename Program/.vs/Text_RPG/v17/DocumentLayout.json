@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6E184632-847B-433A-A34C-A7D0FD46E09C}|Text_RPG.vcxproj|solutionrelative:util.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -40,9 +40,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "util.h",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.h",
               "RelativeDocumentMoniker": "util.h",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.h",
               "RelativeToolTip": "util.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -52,9 +52,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "main.h",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.h",
               "RelativeDocumentMoniker": "main.h",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.h",
               "RelativeToolTip": "main.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -64,9 +64,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "game.h",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.h",
               "RelativeDocumentMoniker": "game.h",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.h",
               "RelativeToolTip": "game.h",
               "ViewState": "AQIAAAMAAAAAAAAAAAAUwBgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -76,9 +76,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "util.c",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.c",
               "RelativeDocumentMoniker": "util.c",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\util.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\util.c",
               "RelativeToolTip": "util.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
@@ -88,11 +88,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "game.c",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.c",
               "RelativeDocumentMoniker": "game.c",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\game.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\game.c",
               "RelativeToolTip": "game.c",
-              "ViewState": "AQIAAGIBAAAAAAAAAAAUwHIBAAAZAAAA",
+              "ViewState": "AgIAAGABAAAAAAAAAAAAAMYBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-25T12:29:17.998Z",
               "EditorCaption": ""
@@ -101,9 +101,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\SBS\\Desktop\\Text-RPG\\Program\\main.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Text-RPG\\Program\\main.c",
               "RelativeToolTip": "main.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",

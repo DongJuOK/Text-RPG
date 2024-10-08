@@ -434,16 +434,25 @@ int Fight_Select()
 			    {
 			    	if (s == 0)
 			    	{
+						zombie1.health = 100;
+						zombie2.health = 80;
+						zombie3.health = 65;
 			    		c_box();
 			    		data_shovel();
 			    	}
 			    	else if (s == 1)
 			    	{
+						zombie1.health = 100;
+						zombie2.health = 80;
+						zombie3.health = 65;
 			    		c_box();
 			    		data_lighter();
 			    	}
 			    	else if (s == 2)
 			    	{
+						zombie1.health = 100;
+						zombie2.health = 80;
+						zombie3.health = 65;
 			    		c_box();
 			    		data_gun();
 			    	}
