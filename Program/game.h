@@ -21,3 +21,6 @@ void title();
 int menu();
 void info();
 void start();
+void data_shovel();
+void data_lighter();
+void data_gun();

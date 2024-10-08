@@ -5,6 +5,7 @@ char name[100];
 char monster[100] = "몬 스 터";
 
 int s;
+int z;
 
 struct Weapon
 {
@@ -24,9 +25,9 @@ struct Weapon shovel = { 100, 15, 10 };
 struct Weapon lighter = { 75, 17, 7 };
 struct Weapon gun = { 50, 20, 5 };
 
-struct Zombie zombie1 = { 100, 8, 5 };
-struct Zombie zombie2 = { 80, 10, 3 };
-struct Zombie zombie3 = { 65, 13, 7 };
+struct Zombie zombie1 = { 100, 8, 6 };
+struct Zombie zombie2 = { 80, 10, 4 };
+struct Zombie zombie3 = { 65, 13, 8 };
 
 void Load(const char* fileName)
 {
@@ -350,13 +351,49 @@ void fight_box(int startx, int starty)
 	}
 }
 
+void Fight_System()
+{
+	int term = zombie1.health;
+
+	if (s == 0 && z == 0)
+	{
+		if (zombie1.health > 0)
+		{
+			term -= (shovel.damage - zombie1.defense / 2);
+			zombie1.health = term;
+
+			if (zombie1.health <= 0)
+			{
+				t_box();
+				gotoxy(26, 12);
+				printf("몬스터를 처치했습니다!");
+
+				zombie1.health = 100;
+
+				switch (key)
+				{
+				case SUBMIT: 
+					return;
+				}
+			}
+
+			gotoxy(14, 6);
+			printf("      ");
+			gotoxy(14, 6);
+			printf("%d", term);
+
+			Fight_Select();
+		}
+	}
+}
+
 int Fight_Select()
 {
 	int x = 28;
 	int y = 10;
 
 	gotoxy(x, y);
-	printf(">            <");
+	printf(">");
 
 	while (1)
 	{
@@ -369,14 +406,63 @@ int Fight_Select()
 				key = _getch();
 			}
 
+			switch (key)
+			{
+			case DOWN: if (y < 15)
+			{
+				gotoxy(x, y);
+				printf("  ");
+				y += 5;
+				gotoxy(x, y);
+				printf(">");
+			}
+				break;
 
+			case UP: if (y > 10)
+			{
+				gotoxy(x, y);
+				printf("  ");
+				y -= 5;
+				gotoxy(x, y);
+				printf(">");
+			}
+				break;
+
+			case SUBMIT: 
+			{
+			    if (y == 15)
+			    {
+			    	if (s == 0)
+			    	{
+			    		c_box();
+			    		data_shovel();
+			    	}
+			    	else if (s == 1)
+			    	{
+			    		c_box();
+			    		data_lighter();
+			    	}
+			    	else if (s == 2)
+			    	{
+			    		c_box();
+			    		data_gun();
+			    	}
+			    }
+
+				if (y == 10)
+				{
+					Fight_System();
+				}
+			}
+			    return 0;
+			}
 		}
 	}
 
 	return 0;
 }
 
-void Fight_Text(int z)
+void Fight_Text(z)
 {
 	gotoxy(8, 3);
 	printf("%s", monster);
@@ -445,6 +531,7 @@ void Fight_Text(int z)
 		printf("방어력: %d\n", gun.defense);
 	}
 	
+	Fight_Select();
 }
 
 void adventure_1()
