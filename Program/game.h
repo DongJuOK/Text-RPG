@@ -24,3 +24,4 @@ void start();
 void data_shovel();
 void data_lighter();
 void data_gun();
+int weapon_select();

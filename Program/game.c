@@ -6,6 +6,7 @@ char monster[100] = "몬 스 터";
 
 int s;
 int z;
+int percent;
 
 struct Weapon
 {
@@ -353,14 +354,33 @@ void fight_box(int startx, int starty)
 
 void Fight_System()
 {
-	int term = zombie1.health;
+	int term1 = zombie1.health;
+	int term2 = shovel.health;
 
 	if (s == 0 && z == 0)
 	{
 		if (zombie1.health > 0)
 		{
-			term -= (shovel.damage - zombie1.defense / 2);
-			zombie1.health = term;
+			if (percent <= 30)
+			{
+				term1 -= (shovel.damage - zombie1.defense / 2);
+				zombie1.health = term1;
+
+				term2 -= (zombie1.attack - shovel.defense / 2) * 5;
+				shovel.health = term2;
+
+				percent = rand() % 100 + 1;
+			}
+			else if (percent > 30)
+			{
+				term1 -= (shovel.damage - zombie1.defense / 2);
+				zombie1.health = term1;
+
+				term2 -= (zombie1.attack - shovel.defense / 2);
+				shovel.health = term2;
+
+				percent = rand() % 100 + 1;
+			}
 
 			if (zombie1.health <= 0)
 			{
@@ -369,6 +389,7 @@ void Fight_System()
 				printf("몬스터를 처치했습니다!");
 
 				zombie1.health = 100;
+				shovel.health = 100;
 
 				switch (key)
 				{
@@ -376,11 +397,31 @@ void Fight_System()
 					return;
 				}
 			}
+			else if (shovel.health <= 0)
+			{
+				t_box();
+				gotoxy(29, 12);
+				printf("사망하였습니다.");
+
+				zombie1.health = 100;
+				shovel.health = 100;
+
+				switch (key)
+				{
+				case SUBMIT:
+					return 0;
+				}
+			}
 
 			gotoxy(14, 6);
 			printf("      ");
 			gotoxy(14, 6);
-			printf("%d", term);
+			printf("%d", term1);
+
+			gotoxy(14, 18);
+			printf("      ");
+			gotoxy(14, 18);
+			printf("%d", term2);
 
 			Fight_Select();
 		}
@@ -437,6 +478,7 @@ int Fight_Select()
 						zombie1.health = 100;
 						zombie2.health = 80;
 						zombie3.health = 65;
+
 			    		c_box();
 			    		data_shovel();
 			    	}
@@ -561,6 +603,8 @@ int game_select()
 	int x = 13;
 	int y = 20;
 
+	srand(time(NULL));
+
 	gotoxy(x, y);
 	printf(">");
 
@@ -601,6 +645,8 @@ int game_select()
 			{
 				if (x == 13)
 				{
+					percent = rand() % 100 + 1;
+
 					adventure_1();
 				}
 				else if (x == 50)
